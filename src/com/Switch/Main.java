@@ -13,6 +13,19 @@ public class Main {
 
         System.out.println("Enter a number: ");
         String input = sc.nextLine();
-        int monthNumber = Integer.parseInt(input);
+
+        switch (input) {
+            case "Jan":
+                System.out.println("The month is 1");
+                break;
+            case "Feb":
+                System.out.println("The month is 2");
+//                break;
+            case "Mar":
+                System.out.println("The month is 3");
+                break;
+            default:
+                System.out.println("You chose another month!");
+        }
     }
 }
